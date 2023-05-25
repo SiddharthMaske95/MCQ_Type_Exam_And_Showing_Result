@@ -1,0 +1,95 @@
+package com.myspace.mcqtypeexamandresult;
+
+rule "First"
+ruleflow-group "Test1"
+when
+$R:Data_Model(firstAnswer.equals("Java development kit") , firstAnswer!=null ,$count:count)
+then
+$R.setCount($count+1);
+System.out.println("\n 1 Answer Correct");
+end
+
+rule "Second"
+ruleflow-group "Test1"
+when
+$R:Data_Model(secondAnswer.equals("Java Runtime Environment") , secondAnswer!=null ,$count:count)
+then
+$R.setCount($count+1);
+System.out.println("\n 2 Answer Correct");
+end
+
+
+rule "Third"
+ruleflow-group "Test1"
+when
+$R:Data_Model(thirdAnswer.equals("It uses bytecode for execution") , thirdAnswer!=null ,$count:count)
+then
+$R.setCount($count+1);
+System.out.println("\n 3 Answer Correct");
+end
+
+rule "Fourth"
+ruleflow-group "Test1"
+when
+$R:Data_Model(fourthAnswer.equals("Yes") , fourthAnswer!=null ,$count:count)
+then
+$R.setCount($count+1);
+System.out.println("\n 4 Answer Correct");
+end
+
+rule "Fifth"
+ruleflow-group "Test1"
+when
+$R:Data_Model(fifthAnswer.equals("Both A and B") , fifthAnswer!=null ,$count:count)
+then
+$R.setCount($count+1);
+System.out.println("\n 5 Answer Correct");
+end
+
+rule "Sixth"
+ruleflow-group "Test1"
+when
+$R:Data_Model(sixthAnswer.equals("/* */") , sixthAnswer!=null ,$count:count)
+then
+$R.setCount($count+1);
+System.out.println("\n 6 Answer Correct");
+end
+
+rule "Seven"
+ruleflow-group "Test1"
+when
+$R:Data_Model(seventhAnswer.equals("main() method") , seventhAnswer!=null ,$count:count)
+then
+$R.setCount($count+1);
+System.out.println("\n 7 Answer Correct");
+end
+
+
+rule "Eight"
+ruleflow-group "Test1"
+when
+$R:Data_Model(eightAnswer.equals("Yes") , eightAnswer!=null ,$count:count)
+then
+$R.setCount($count+1);
+System.out.println("\n 8 Answer Correct");
+end
+
+
+rule "Nine"
+ruleflow-group "Test1"
+when
+$R:Data_Model(nineAnswer.equals("Yes") , nineAnswer!=null ,$count:count)
+then
+$R.setCount($count+1);
+System.out.println("\n 9 Answer Correct");
+end
+
+
+rule "Tenth"
+ruleflow-group "Test1"
+when
+$R:Data_Model(tenthAnswer.equals("throw") , tenthAnswer!=null ,$count:count)
+then
+$R.setCount($count+1);
+System.out.println("\n 10 Answer Correct");
+end
